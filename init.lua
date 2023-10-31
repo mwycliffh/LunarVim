@@ -8,6 +8,13 @@ if not vim.tbl_contains(vim.opt.rtp:get(), base_dir) then
   vim.opt.rtp:prepend(base_dir)
 end
 
+-- Many thanks to Sintax at: 
+-- https://github.com/s1n7ax/neovim-lua-plugin-boilerplate.git
+-- AND Heiker Curiel at:
+-- https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/
+-- require("greetings"):greet()
+require("greetings")
+
 require("lvim.bootstrap"):init(base_dir)
 
 require("lvim.config"):load()

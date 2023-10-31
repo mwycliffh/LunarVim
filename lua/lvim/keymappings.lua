@@ -34,6 +34,8 @@ local mode_adapters = {
 
 local defaults = {
   insert_mode = {
+    -- Wycliff added keymapping: instead of pressing capslock or escape-key, I prefer a quick 'j-j'
+    ["jj"] = "<Esc>",
     -- Move current line / block with Alt-j/k ala vscode.
     ["<A-j>"] = "<Esc>:m .+1<CR>==gi",
     -- Move current line / block with Alt-j/k ala vscode.

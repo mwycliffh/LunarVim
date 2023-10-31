@@ -21,7 +21,7 @@ local core_plugins = {
     dependencies = "mason.nvim",
   },
   { "tamago324/nlsp-settings.nvim", cmd = "LspSettings", lazy = true },
-  { "jose-elias-alvarez/null-ls.nvim", lazy = true },
+  { "nvimtools/none-ls.nvim", lazy = true },
   {
     "williamboman/mason.nvim",
     config = function()
@@ -108,22 +108,31 @@ local core_plugins = {
       "friendly-snippets",
     },
   },
-  { "rafamadriz/friendly-snippets", lazy = true, cond = lvim.builtin.luasnip.sources.friendly_snippets },
+
+  -- Wycliff -- A forked version of the original friendly-snippets by rafamadriz . . .
+  {
+    "mwycliffh/friendly-snippets",
+    branch = "wycliff_one",
+    lazy = true,
+    cond = lvim.builtin.luasnip.sources.friendly_snippets
+  },
+
   {
     "folke/neodev.nvim",
     lazy = true,
   },
 
-  -- Autopairs
-  {
-    "windwp/nvim-autopairs",
-    event = "InsertEnter",
-    config = function()
-      require("lvim.core.autopairs").setup()
-    end,
-    enabled = lvim.builtin.autopairs.active,
-    dependencies = { "nvim-treesitter/nvim-treesitter", "hrsh7th/nvim-cmp" },
-  },
+  -- Eventually you ought to just do away with this commented out block. I do not like autopairs.
+  -- -- Autopairs
+  -- {
+  --   "windwp/nvim-autopairs",
+  --   event = "InsertEnter",
+  --   config = function()
+  --     require("lvim.core.autopairs").setup()
+  --   end,
+  --   enabled = lvim.builtin.autopairs.active,
+  --   dependencies = { "nvim-treesitter/nvim-treesitter", "hrsh7th/nvim-cmp" },
+  -- },
 
   -- Treesitter
   {

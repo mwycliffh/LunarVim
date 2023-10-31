@@ -1,7 +1,10 @@
 return {
   leader = "space",
   reload_config_on_save = true,
-  colorscheme = "lunar",
+  -- Wycliff:  Changing color from lunar to torte  . . .
+  -- colorscheme = "torte",  -- colorscheme = "lunar",
+  colorscheme = "murphy",  -- colorscheme = "lunar", "slate" , "elflord" , "pablo"
+
   transparent_window = false,
   format_on_save = {
     ---@usage boolean: format on save (Default: false)
