@@ -1,6 +1,15 @@
 local greet = require('greetings.awesome-module')
 
 vim.api.nvim_create_user_command(
+  'WycFormatCpp2',
+  function()
+    vim.cmd ('echo "Cpp formatting2: ANSI C++ style with two spaces per indent"')
+    vim.cmd ('%!astyle --mode=c -s2')
+  end,
+  {desc = 'Greet Mercel at the Airport if the Lord is willing'}
+)
+
+vim.api.nvim_create_user_command(
   'WycFormatCpp',
   function()
     -- vim.cmd ('1,40!astyle --mode=c --style=ansi')
