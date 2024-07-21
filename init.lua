@@ -13,6 +13,7 @@ end
 -- AND Heiker Curiel at:
 -- https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/
 -- require("greetings"):greet()
+
 require("greetings")
 
 require("lvim.bootstrap"):init(base_dir)

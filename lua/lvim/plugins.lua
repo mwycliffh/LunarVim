@@ -122,16 +122,38 @@ local core_plugins = {
     lazy = true,
   },
 
-  -- Eventually you ought to just do away with this commented out block. I do not like autopairs.
-  -- -- Autopairs
+  -- -- Wycliff -- Trying the minimap   -- MinimapToggle  .  .  .  .  .  .  .  .  
   -- {
-  --   "windwp/nvim-autopairs",
-  --   event = "InsertEnter",
-  --   config = function()
-  --     require("lvim.core.autopairs").setup()
+  --   'wfxr/minimap.vim',
+  --   build = "cargo install --locked code-minimap",
+  --   -- cmd = {"Minimap", "MinimapClose", "MinimapToggle", "MinimapRefresh", "MinimapUpdateHighlight"},
+  --   -- config = function ()
+  --   init = function ()
+  --     vim.cmd ("let g:minimap_width = 20")
+  --     vim.cmd ("let g:minimap_auto_start = 1")
+  --     vim.cmd ("let g:minimap_auto_start_win_enter = 1")
   --   end,
-  --   enabled = lvim.builtin.autopairs.active,
-  --   dependencies = { "nvim-treesitter/nvim-treesitter", "hrsh7th/nvim-cmp" },
+  -- },
+
+ --  -- Wycliff -- Session by rmagatti   . . . . . . . . . . . . 
+ --  {
+ --    'rmagatti/auto-session',
+ --    dependencies = {
+ --      'nvim-telescope/telescope.nvim', -- Only needed if you want to use sesssion lens
+ --    },
+ --    config = function()
+ --      require('auto-session').setup({
+ --        auto_session_suppress_dirs = { '~/', '~/Projects', '~/Downloads', '/' },
+ --      })
+ --    end,
+ --  },
+
+  -- Wycliff -- Tpope obsession . . . .. . . . . . . . . .
+  -- {
+  --   "dhruvasagar/vim-prosession",
+  --   dependencies = {
+  --     "tpope/vim-obsession",
+  --   },
   -- },
 
   -- Treesitter

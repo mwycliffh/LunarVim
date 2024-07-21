@@ -1,8 +1,8 @@
 return {
   leader = "space",
   reload_config_on_save = true,
-  -- colorscheme = "lunar", "slate" , "elflord" , "pablo", "murphy" --- Wycliff
-  colorscheme = "desert",
+  -- colorscheme = "lunar", "slate" , "elflord" , "pablo", "murphy" , "desert" - is good , --- Wycliff
+  colorscheme = "lunar",
 
   transparent_window = false,
   format_on_save = {
