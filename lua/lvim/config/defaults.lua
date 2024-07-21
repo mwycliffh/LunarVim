@@ -2,7 +2,7 @@ return {
   leader = "space",
   reload_config_on_save = true,
   -- colorscheme = "lunar", "slate" , "elflord" , "pablo", "murphy" , "desert" - is good , --- Wycliff
-  colorscheme = "lunar",
+  colorscheme = "material-deep-ocean",
 
   transparent_window = false,
   format_on_save = {

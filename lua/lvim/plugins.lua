@@ -36,6 +36,31 @@ local core_plugins = {
     event = "User FileOpened",
     lazy = true,
   },
+
+  -- Wycliff -- Additional Color Schemes     .   .   .   .   .   .   .   .     .   .   .   .   .   .   .   
+  -- . . .  smw . . . .   .   .   .   .   .   .   .   .   .   .   .   .   .  
+
+
+  {
+    "marko-cerovac/material.nvim",
+    -- lazy = not vim.startswith(lvim.colorscheme, "tokyonight"),
+  },
+  -- {
+    -- "lunarvim/lunar.nvim",
+    -- lazy = lvim.colorscheme ~= "lunar",
+  -- },
+
+  -- -- If you are using Lazy
+  -- require('lazy').setup({
+  --     'marko-cerovac/material.nvim'
+  -- }, opts)
+
+  -- -- If you are using Pckr
+  -- require('pckr').add({
+  --     'marko-cerovac/material.nvim'
+  -- })
+
+
   {
     "folke/tokyonight.nvim",
     lazy = not vim.startswith(lvim.colorscheme, "tokyonight"),
